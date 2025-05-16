@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/main/src/main/resources/schema/ans/0.10.12/story_elements/interactive.json",
+  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/story_elements/interactive.json",
   "description": "An interactive content element",
   "type": "object",
   "additionalProperties": true,
   "properties": {
     "_id": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/main/src/main/resources/schema/ans/0.10.12/traits/trait_id.json"
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_id.json"
     },
     "subtype": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/main/src/main/resources/schema/ans/0.10.12/traits/trait_subtype.json"
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_subtype.json"
     },
     "attributes": {
       "description": "Any JSON describing the properties of the Interactive content element.",
@@ -34,7 +34,7 @@
     "type": "string"
   },
   "additional_properties": {
-    "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/main/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
+    "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
   },
   "required": ["type", "subtype"]
 }
