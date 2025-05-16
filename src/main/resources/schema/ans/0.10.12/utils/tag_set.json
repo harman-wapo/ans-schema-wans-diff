@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/tag_set.json",
+  "title": "Taggings Set",
+  "description": "Holds the set of topics, auxiliaries, and additional properties that make up a tagging set",
+  "type": "object",
+  "required": ["topics", "auxiliaries"],
+  "additionalProperties": false,
+  "properties": {
+    "topics": {
+      "type": "array",
+      "description": "A list of topics alternative to the traditional list populated by Clavis",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/topic.json"
+      }
+    },
+    "auxiliaries": {
+      "type": "array",
+      "description": "A list of auxiliaries alternative to the traditional list populated by Clavis",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/auxiliary.json"
+      }
+    },
+    "additional_properties": {
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json" 
+    }
+  }
+}

@@ -15,9 +15,16 @@
             "type": "string",
             "description": "The general name for this auxiliary."
         },
+        "score": {
+            "type": "number",
+            "description": "An arbitrary weighting to give the topic"
+        },
         "uid": {
             "type": "string",
             "description": "A short identifier for this auxiliary. Usually used in cases where a long form id cannot work."
+        },
+        "additional_properties": {
+          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
         }
     }
 }

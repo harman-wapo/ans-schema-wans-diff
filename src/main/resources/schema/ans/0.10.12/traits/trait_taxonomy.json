@@ -40,41 +40,6 @@
         "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/tag.json"
       }
     },
-    "categories": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/category.json"
-      },
-      "description": "A list of categories.  Categories are overall, high-level classification of what the content is about."
-    },
-    "content_topics": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/content_topic.json"
-      },
-      "description": "A list of topics. Topics are the subjects that the content is about."
-    },
-    "entities": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/entity.json"
-      },
-      "description": "A list of entities. Entities are proper nouns, like people, places, and organizations."
-    },
-    "custom_categories": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/custom_category.json"
-      },
-      "description": "A list of custom categories.  Categories are overall, high-level classification of what the content is about."
-    },
-    "custom_entities": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/custom_entity.json"
-      },
-      "description": "A list of custom entities. Entities are proper nouns, like people, places, and organizations."
-    },
 
     "primary_site": {
       "description": "Deprecated in 0.10.12. (See `primary_section` instead.) A primary site object or reference to one. In the Arc ecosystem, a reference here is denormalized into a site from the arc-site-service.",
@@ -212,6 +177,16 @@
       "items": {
         "type": "string",
         "pattern": "^[0-9a-fA-F]{24}$"
+      }
+    },
+
+    "taggings": {
+      "description": "Allow for multiple sets of topics and auxiliaries to coexist without conflict",
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/tag_set.json"
+        }
       }
     },
 

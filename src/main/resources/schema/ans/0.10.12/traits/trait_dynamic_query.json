@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_dynamic_query.json",
+    "title": "Dynamic Query",
+    "description": "Dynamic items for Collection Query Backfill",
+    "type": "object",
+    "properties": {
+      "query": {
+          "title": "Query",
+          "description": "The Elasticsearch query DSL",
+          "type": "object"
+      }
+    },
+    "required": ["query"]
+  }

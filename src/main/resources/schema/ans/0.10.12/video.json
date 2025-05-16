@@ -195,6 +195,9 @@
     },
     "contributors": {
       "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_contributors.json"
+    },
+    "summaries": {
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_summaries.json"
     }
 
   },

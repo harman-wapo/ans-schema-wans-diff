@@ -56,19 +56,8 @@
           "type": "object",
 
           "additionalProperties": false,
-          "properties": {
-            "referent": {
-              "not": {}
-            },
-            "type": {
-              "not": {}
-            },
-            "version": {
-              "not": {}
-            }
-          },
           "patternProperties": {
-            "^([a-zA-Z0-9_])*$": {}
+            "^(?!(referent|type|version)$)[a-zA-Z0-9_]*$": {}
           }
         }
       },

@@ -22,7 +22,12 @@
       "type": "boolean",
       "description": "If true, comments must be moderator-approved before being displayed."
     },
-
+    "ai_summary": {
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/enabled_entity.json"
+    },
+    "ai_prompt": {
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_comments_ai_prompt.json"
+    },
     "additional_properties": {
       "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
     }

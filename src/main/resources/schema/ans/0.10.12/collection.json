@@ -176,6 +176,9 @@
     },
     "dynamic_items": {
       "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_dynamic_items.json"
+    },
+    "dynamic_query": {
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_dynamic_query.json"
     }
   },
   "required": [ "type", "version" ]

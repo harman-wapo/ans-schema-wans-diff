@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/enabled_entity.json",
+    "title": "Enabled Entity",
+    "description": "Models a trait that can be enabled or disabled.",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "enabled": {
+            "type": "boolean",
+            "description": "Represents whether the entity is enabled or not"
+        }
+    },
+    "required": ["enabled"]
+}

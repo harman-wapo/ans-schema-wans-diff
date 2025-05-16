@@ -4,7 +4,7 @@
     "title": "Topic",
     "description": "Models a topic used in describing a piece of content.",
     "type": "object",
-    "required": ["_id", "score", "uid"],
+    "required": ["_id", "uid"],
     "additionalProperties": false,
     "properties": {
         "_id": {
@@ -22,6 +22,9 @@
         "uid": {
             "type": "string",
             "description": "A short identifier for this topic. Usually used in cases where a long form id cannot work."
+        },
+        "additional_properties": {
+          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
         }
     }
 }
