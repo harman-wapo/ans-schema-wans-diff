@@ -1,0 +1,11 @@
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_corrections.json",
+  "title": "Corrections",
+  "description": "Trait that applies a list of corrections to a document.",
+  "type": "array",
+  "items": {
+    "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/story_elements/correction.json"
+  }
+}

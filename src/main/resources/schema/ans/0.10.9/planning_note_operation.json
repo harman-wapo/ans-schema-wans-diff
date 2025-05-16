@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://github.com/washingtonpost/ans-schema/blob/master/src/main/resources/schema/ans/0.10.9/planning_note_operation.json",
+  "id": "https://github.com/wpmedia/wans-schema/blob/master/src/main/resources/schema/ans/0.10.9/planning_note_operation.json",
   "description": "An operation to update the planning note associated with a story.",
   "type": "object",
   "allOf": [{

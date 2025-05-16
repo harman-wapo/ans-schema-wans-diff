@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_comments_ai_prompt.json",
+    "title": "Comments AI Prompt",
+    "description": "Represents the AI prompt be presented to the user for comments on a story",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "enabled": {
+            "type": "boolean",
+            "description": "Represents whether the AI prompt is enabled or not"
+        },
+        "content": {
+            "type": "string",
+            "description": "The content of the AI prompt"
+        },
+        "display_avatar": {
+            "type": "boolean",
+            "description": "If true, display the avatar of the author"
+        }
+    },
+    "required": ["enabled"]
+}

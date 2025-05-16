@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.12/utils/summaries_takeaways.json",
+    "title": "Summaries takeaways",
+    "description": "Represents the takeaways of an article summary, consisting of whether this summary is approved, the model used, the last generated date, and the summary text items themsevles.",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "approved": {
+        "type": "boolean",
+        "description": "Whether these summary takeaways are approved"
+      },
+      "items": {
+        "type": "array",
+        "description": "The text entries of this summary",
+        "items": {
+            "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.12/utils/summaries_takeaways_item.json"
+        }
+      },
+      "model_id": {
+        "type": "string",
+        "description": "The model used to generate these summaries"
+      },
+      "last_generated_date": {
+        "type": "string",
+        "description": "The timestamp this summary was last generated",
+        "format": "date-time"
+      }
+    }
+  }

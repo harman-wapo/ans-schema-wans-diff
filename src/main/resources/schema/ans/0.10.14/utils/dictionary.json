@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/dictionary.json",
+  "properties": {
+    "basic": {
+      "type": "string"
+    }
+  },
+  "patternProperties": {
+    ".*": {
+      "type": "string"
+    }
+  },
+  "required": [ "basic" ]
+}

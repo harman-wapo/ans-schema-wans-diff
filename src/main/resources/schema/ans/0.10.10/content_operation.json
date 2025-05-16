@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/content_operation.json",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.10/content_operation.json",
   "description": "An operation on a denormalized story",
   "type": "object",
   "allOf": [{
@@ -42,7 +42,7 @@
       },
       "body": {
         "description": "The object being inserted/updated/deleted",
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/content.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.10/content.json"
       },
       "created": {
         "type": "boolean",
@@ -59,7 +59,7 @@
             "title": "Trigger Type",
             "description": "The type of update that was consumed in order to produce this update. If this operation is the result of a referent update, than this type may or may not match the type of document in the body. For example, suppose story A contains image B and story C. If B is updated, then an operation may be produced with source 'image' and a body of story A (with updated image metadata.) If C is updated, then an operation may be produced with source 'story' and the body of story A.",
             "type": "string",
-            "enum": [ "story", "gallery", "image", "video", "url", "site", "author", "clavis", "variant" ]
+            "enum": [ "story", "gallery", "image", "video", "url", "site", "author", "clavis" ]
           },
           "id": {
             "title": "Trigger ID",
@@ -73,10 +73,10 @@
           },
 
           "priority": {
-            "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_priority.json"
+            "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.10/traits/trait_priority.json"
           },
           "app_name": {
-            "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_app_name.json"
+            "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.10/traits/trait_app_name.json"
           }
 
         }

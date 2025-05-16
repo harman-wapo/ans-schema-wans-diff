@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://github.com/washingtonpost/ans-schema/blob/master/src/main/resources/schema/ans/0.10.10/platform_pitch_operation.json",
+  "id": "https://github.com/wpmedia/wans-schema/blob/master/src/main/resources/schema/ans/0.10.10/platform_pitch_operation.json",
   "description": "An operation to add or update a story's pitch to a WebSked platform.",
   "type": "object",
   "allOf": [{
@@ -34,7 +34,7 @@
       },
       "body": {
         "description": "The object being inserted/updated",
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_platform_pitch.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.10/traits/trait_platform_pitch.json"
       }
     },
     "required": [ "type", "operation", "id", "organization_id", "body" ]

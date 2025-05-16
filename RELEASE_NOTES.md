@@ -1,40 +1,27 @@
 # ANS Release Notes
 
-### 1.12.4
-* [ACMS-1783](https://arcpublishing.atlassian.net/browse/ACMS-1783) - External Canonical URL Support
+## 1.10.14 2025/1/23
+* Add support for other text-based summaries to `summaries` trait
+* Add `summaries` trait to videos
 
-### 1.12.3
+## 1.10.13 2024/10/15
+* Add new `ai_prompt` and `ai_summary` traits to comment trait
 
-* Prevent the callback function from being called twice during the loading of schemas
-* Prevent the load schema function from returning before the full schema is read
+## 1.10.12 2024/5/9
+* Add new `summaries` trait to stories
 
-### 1.12.2 
+## 1.10.11 2023/12/1
 
-* [PPA-825](https://arcpublishing.atlassian.net/browse/PPA-825) - fix a minor issue in previous 1.12.1
+* Add new `interactive` content element definition
 
-### 1.12.1 
+## 1.10.10 2023/6/14
 
-* [PPA-825](https://arcpublishing.atlassian.net/browse/PPA-825) - Fix version checking of unwanted types while upverting
+* Support new `dynamic_query` field on collection objects
 
+### 1.10.9 2023/3/8
 
-### 1.12.0 2023/1/17
-
-* Release containing version 0.10.10 schema changes:
-  * [New fields for integration of external analysis tool](/docs/proposals/2024-03-01_new_fields_for_content_analysis.md)
-
-### 1.11.0 2023/1/17
-
-* Release containing version 0.10.9 schema changes:
-  * [Add Auth & SEO Filename traits to image ANS](/docs/proposals/2022-06-27_SEO_Filename_proposal.md)
-  * [Conditional Content](/docs/proposals/2022-06-31%20-%20Conditional%20Content.md)
-
-### 1.11.0-rc.0 2022/8/23
-
-* Pre-release version containing schema changes for Conditional Content
-
-### 1.10.8 2021/3/30
-
-* Prevent the callback function from being called twice when errors occur during the loading of schemas
+* Adds new ANS field `taggings` to `taxonomy`
+* Updates `topic` and `auxiliary` schema to support `additional_properties` and no longer require `score`
 
 ### 1.9.1 2019/2/1
 

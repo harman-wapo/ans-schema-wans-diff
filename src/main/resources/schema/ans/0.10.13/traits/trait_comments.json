@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_comments.json",
+  "title": "Comments",
+  "description": "Comment configuration data",
+  "type": "object",
+  "additionalProperties": {},
+  "properties": {
+    "comments_period": {
+      "type": "integer",
+      "description": "How long (in days) after publish date until comments are closed."
+    },
+    "allow_comments": {
+      "type": "boolean",
+      "description": "If false, commenting is disabled on this content."
+    },
+    "display_comments": {
+      "type": "boolean",
+      "description": "If false, do not render comments on this content."
+    },
+    "moderation_required": {
+      "type": "boolean",
+      "description": "If true, comments must be moderator-approved before being displayed."
+    },
+    "ai_summary": {
+      "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/utils/enabled_entity.json"
+    },
+    "ai_prompt": {
+      "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_comments_ai_prompt.json"
+    },
+    "additional_properties": {
+      "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_additional_properties.json"
+    }
+
+  }
+}

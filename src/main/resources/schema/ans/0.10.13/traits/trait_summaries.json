@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_summaries.json",
+  "title": "Summaries",
+  "description": "Holds information pertaining to the summary for an article",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "takeaways": {
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/utils/summaries_takeaways.json"
+    }
+  },
+  "required": ["takeaways"]
+}

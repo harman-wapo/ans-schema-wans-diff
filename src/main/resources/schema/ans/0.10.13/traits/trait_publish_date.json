@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.13/traits/trait_publish_date.json",
+  "title": "Publish_Date",
+  "description": "When the story was published.",
+  "type": "string",
+  "format": "date-time"
+}
