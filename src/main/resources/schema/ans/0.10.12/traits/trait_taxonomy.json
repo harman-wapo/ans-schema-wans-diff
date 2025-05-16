@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_taxonomy.json",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/traits/trait_taxonomy.json",
   "title": "Taxonomy",
   "description": "Holds the collection of tags, categories, keywords, etc that describe content.",
   "type": "object",
@@ -9,83 +9,48 @@
     "keywords": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/keyword.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/keyword.json"
       },
       "description": "A list of keywords. In the Arc ecosystem, this list is populated by Clavis."
     },
     "named_entities": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/named_entity.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/named_entity.json"
       },
       "description": "A list of named entities. In the Arc ecosystem, this list is populated by Clavis."
     },
     "topics": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/topic.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/topic.json"
       },
       "description": "A list of topics. In the Arc ecosystem, this list is populated by Clavis."
     },
     "auxiliaries": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/auxiliary.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/auxiliary.json"
       },
       "description": "A list of auxiliaries. In the Arc ecosystem, this list is populated by Clavis."
     },
     "tags": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/tag.json"
+        "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/tag.json"
       }
-    },
-    "categories": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/category.json"
-      },
-      "description": "A list of categories.  Categories are overall, high-level classification of what the content is about."
-    },
-    "content_topics": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/content_topic.json"
-      },
-      "description": "A list of topics. Topics are the subjects that the content is about."
-    },
-    "entities": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/entity.json"
-      },
-      "description": "A list of entities. Entities are proper nouns, like people, places, and organizations."
-    },
-    "custom_categories": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/custom_category.json"
-      },
-      "description": "A list of custom categories.  Categories are overall, high-level classification of what the content is about."
-    },
-    "custom_entities": {
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/custom_entity.json"
-      },
-      "description": "A list of custom entities. Entities are proper nouns, like people, places, and organizations."
     },
 
     "primary_site": {
-      "description": "Deprecated in 0.10.12. (See `primary_section` instead.) A primary site object or reference to one. In the Arc ecosystem, a reference here is denormalized into a site from the arc-site-service.",
+      "description": "Deprecated in 0.10.14. (See `primary_section` instead.) A primary site object or reference to one. In the Arc ecosystem, a reference here is denormalized into a site from the arc-site-service.",
       "oneOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/site.json"
+          "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/site.json"
         },
         {
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/reference.json"
+              "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/reference.json"
             },
             {
               "properties": {
@@ -107,12 +72,12 @@
       "description": "A primary section object or reference to one. In the Arc ecosystem, a reference here is denormalized into a site from the arc-site-service.",
       "oneOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/section.json"
+          "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/section.json"
         },
         {
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/reference.json"
+              "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/reference.json"
             },
             {
               "properties": {
@@ -131,17 +96,17 @@
     },
 
     "sites": {
-      "description": "Deprecated in 0.10.12. (See `sections` instead.) A list of site objects or references to them. In the Arc ecosystem, references in this list are denormalized into sites from the arc-site-service.  In a multi-site context, sites will be denormalized against an organization's default website only.",
+      "description": "Deprecated in 0.10.14. (See `sections` instead.) A list of site objects or references to them. In the Arc ecosystem, references in this list are denormalized into sites from the arc-site-service.  In a multi-site context, sites will be denormalized against an organization's default website only.",
       "type": "array",
       "items": {
         "oneOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/site.json"
+            "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/site.json"
           },
           {
             "allOf": [
               {
-                "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/reference.json"
+                "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/reference.json"
               },
               {
                 "properties": {
@@ -166,12 +131,12 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/section.json"
+            "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/section.json"
           },
           {
             "allOf": [
               {
-                "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/utils/reference.json"
+                "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/reference.json"
               },
               {
                 "properties": {
@@ -215,8 +180,18 @@
       }
     },
 
+    "taggings": {
+      "description": "Allow for multiple sets of topics and auxiliaries to coexist without conflict",
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/utils/tag_set.json"
+        }
+      }
+    },
+
     "additional_properties": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
+      "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/traits/trait_additional_properties.json"
     }
 
   }

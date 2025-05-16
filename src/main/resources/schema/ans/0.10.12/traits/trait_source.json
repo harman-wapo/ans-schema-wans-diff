@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_source.json",
+  "id": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/traits/trait_source.json",
   "title": "Source",
   "description": "Information about the original source and/or owner of this content",
   "type": "object",
@@ -12,11 +12,11 @@
     },
     "source_type": {
       "type": "string",
-      "description": "Deprecated in 0.10.12. See `distributor.category` and `distributor.subcategory`. (Formerly: The method used to enter this content. E.g. 'staff', 'wires'.)"
+      "description": "Deprecated in 0.10.14. See `distributor.category` and `distributor.subcategory`. (Formerly: The method used to enter this content. E.g. 'staff', 'wires'.)"
     },
     "name": {
       "type": "string",
-      "description": "Deprecated in  0.10.12. See `distributor.name`. (Formerly: The human-readable name of the organization who first produced this content. E.g., 'Reuters'.)"
+      "description": "Deprecated in  0.10.14. See `distributor.name`. (Formerly: The human-readable name of the organization who first produced this content. E.g., 'Reuters'.)"
     },
     "system": {
       "type": "string",
@@ -28,7 +28,7 @@
     },
 
     "additional_properties": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.12/traits/trait_additional_properties.json"
+      "$ref": "https://raw.githubusercontent.com/wpmedia/wans-schema/main/src/main/resources/schema/ans/0.10.14/traits/trait_additional_properties.json"
     }
   }
 }
